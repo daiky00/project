@@ -1,0 +1,53 @@
+
+// Common - Layout
+//------------------------------------------------------------------------------
+
+/* Container */
+.container {
+  position: relative;
+  width: $container-width + 2 * $container-padding;
+  padding: 0 $container-padding;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+
+}
+
+.site-name {
+  width: 200px;
+  height: 50px;
+
+  span {
+    background: url(../img/common/logo.png) no-repeat;
+  }
+}
+
+
+/* Navigation */
+.navigation {
+
+  li {
+
+  }
+
+  a {
+
+  }
+}
+
+/* Content */
+.content {
+
+}
+
+/* Sidebar */
+.sidebar {
+
+}
+
+/* Footer */
+.footer {
+  clear: both;
+}

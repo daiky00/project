@@ -1,0 +1,286 @@
+// =========================================================================
+
+//    Project: Project1
+//    Author: Francisco Pena
+
+// =========================================================================
+
+// Vendor Dependencies
+//@import 'vendor/bootstrap/variables';
+
+// Authored Dependencies
+@import 'setup/variables';
+//@import 'setup/mixins';
+//@import 'setup/sprites';
+@import 'vendor/colorbox/colorbox';
+
+// =========================================================================
+//  Bootstrap
+// =========================================================================
+
+// Core Bootstrap variables and mixins
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+
+// Reset and dependencies
+//@import 'bootstrap/normalize';
+//@import 'bootstrap/print';
+
+// Core CSS
+@import 'bootstrap/scaffolding';
+@import 'bootstrap/type';
+@import 'bootstrap/code';
+@import 'bootstrap/grid';
+@import 'bootstrap/tables';
+@import 'bootstrap/forms';
+@import 'bootstrap/buttons';
+@import 'bootstrap/utilities';
+@import 'bootstrap/responsive-utilities';
+
+// Components
+//@import 'bootstrap/component-animations';
+//@import 'bootstrap/navs';
+//@import 'bootstrap/navbar';
+
+// =========================================================================
+//   Bootstrap Overrides
+
+//   For things that cannot be adjusted just using variables.
+// =========================================================================
+
+// Core CSS
+//@import 'vendor/bootstrap/type';
+//@import 'vendor/bootstrap/buttons';
+//@import 'vendor/bootstrap/forms';
+
+// Components
+//@import 'vendor/bootstrap/navbar';
+
+// =========================================================================
+//  Custom Styling
+// =========================================================================
+
+// Common styles & layouts
+@import 'common/base';
+//@import 'common/utilities';
+
+// Fonts
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+
+// Colors variables
+
+$background-color: #eae2d7;
+$main-color: #e61052;
+$dark-brown: #2a1f0f;
+$light-brown: #9d8a71;
+$white: #fff;
+$facebook-color: #3a5795;
+$twitter-color: #55acee;
+$google-color: #db4437;
+
+// Fonts variables
+
+$main-font: 'Oswald', Helvetica, sans-serif;
+
+// Components
+
+body {
+  background: $background-color;
+
+}
+
+.header {
+
+  h1 {
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 45px;
+    font-weight: bold;
+
+  }
+
+  h2 {
+    color: $dark-brown;
+    font-family: $main-font;
+    font-size: 12px;
+    font-weight: bold;
+
+  }
+
+}
+
+.container {
+  max-width: 1000px;
+
+}
+
+.news {
+  .news-content {
+    background: $white;
+    border-radius: 0 0 0 5px;
+    box-shadow: 2px 2px 1px darken($background-color, 10%);
+    padding: 20px;
+
+    img {
+      border: 1px solid $background-color;
+      height: 80px;
+      padding: 1px;
+      width: 81px;
+    }
+
+    p {
+      color: $light-brown;
+      font-size: .8em;
+    }
+
+    h4 {
+      color: $dark-brown;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 0 15px;
+
+     }
+
+  }
+}
+
+.expansions {
+  background: linear-gradient(to bottom, $main-color 0%, $dark-brown 100%);
+  background-color: $main-color;
+  border-radius: 0 5px 0 0;
+  color: $white;
+  margin: 20px -15px;
+  padding: 20px 0 0;
+
+  h3 {
+    font-size: .8em;
+    margin: 5px 20px 25px;
+    text-shadow: 1px 0 1px $light-brown;
+  }
+
+  .news-content {
+    border-radius: 0 0 5px;
+  }
+
+}
+
+.products {
+  background: linear-gradient(to bottom, $main-color 0%, $dark-brown 100%);
+  background-color: $main-color;
+  border-radius: 5px 0 0 5px;
+  border-right: 1px dashed $background-color;
+  color: $white;
+  margin: 20px -15px;
+  padding: 20px 0 0;
+
+  h3 {
+    font-size: .8em;
+    margin: 5px 20px 25px;
+    text-shadow: 1px 0 1px $light-brown;
+  }
+
+  .news-content {
+    border-radius: 0 0 0 5px;
+  }
+
+}
+
+button {
+  background: transparent;
+  border: 0;
+  color: $main-color;
+
+}
+
+.widget {
+
+  background: $white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px darken($background-color, 10%);
+  color: $light-brown;
+  margin: 20px 0;
+  padding: 4px 0;
+
+  h3 {
+    border-bottom: 1px dashed $background-color;
+    color: lighten($main-color, 10%);
+    font-size: .8em;
+    font-weight: bold;
+    padding: 0 15px 20px;
+  }
+
+  p {
+    padding: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0 10px;
+
+    li {
+      display: inline;
+      font-size: 11px;
+      padding: 0 5px;
+     }
+  }
+
+  i {
+    font-size: 2em;
+  }
+
+  .fa-facebook-square {
+    color: $facebook-color;
+  }
+
+  .fa-twitter-square {
+    color: $twitter-color;
+
+  }
+
+  .fa-google-plus {
+    color: $google-color;
+
+  }
+
+  .random {
+
+    li {
+      display: block;
+      font-size: 13px;
+      padding: 0 0 12px;
+      }
+
+    i {
+      font-size: 1em;
+
+     }
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  .products {
+    border-radius: 5px;
+    border-right: 0;
+    margin: 20px 0;
+    padding: 20px 0 0;
+
+  }
+
+  .expansions {
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 20px 0 0;
+
+  }
+
+  .news {
+    .news-content {
+      border-radius: 0 0 5px 5px;
+
+    }
+  }
+
+}

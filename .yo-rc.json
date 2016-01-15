@@ -1,0 +1,23 @@
+{
+  "generator-xh": {
+    "config": {
+      "projectName": "Project",
+      "authorName": "XHTMLized",
+      "useBranding": true,
+      "reloader": "BrowserSync",
+      "devServer": true,
+      "cssPreprocessor": "scss",
+      "cssPrefix": "_",
+      "ignoreDist": true,
+      "isWP": false,
+      "extension": "php",
+      "features": {
+        "useJquery": true,
+        "useOptim": true,
+        "useSprites": true,
+        "useBootstrap": true,
+        "useModernizr": true
+      }
+    }
+  }
+}

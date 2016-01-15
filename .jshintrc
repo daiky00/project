@@ -1,0 +1,15 @@
+{
+  "strict": true,
+  "globalstrict": true,
+  "browser": true,
+  "jquery": true,
+  "indent": 2,
+  "trailing": true,
+  "unused": true,
+  "undef": true,
+  "curly": true,
+  "browserify": true,
+  "globals": {
+    "console": true
+  }
+}
