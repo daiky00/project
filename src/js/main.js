@@ -28,7 +28,7 @@ $(document).ready(function() {
 
   /* Selecting Images Elements creating slideshow of .5 sec per pic */
   var timeout = function() {
-    setTimeout($('.news-content').find('a[rel=slideshow]').colorbox.next, 500);
+    setTimeout($('.news-content').find('a[rel=slideshow]').colorbox.next, 2000);
   };
 
    /* Calculating the length of the element */
