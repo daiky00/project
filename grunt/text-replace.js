@@ -75,6 +75,15 @@ module.exports = function(grunt) {
         from: '@@timestamp',
         to: '<%= grunt.template.today() %>'
       }]
+    },
+
+    reloader: {
+      src: ['<%= xh.includes %>/scripts.php'],
+      overwrite: true,
+      replacements: [{
+        from: '@@reloader\n',
+        to: ''
+      }]
     }
   });
 };

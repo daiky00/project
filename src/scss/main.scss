@@ -61,7 +61,7 @@
 // =========================================================================
 
 // Common styles & layouts
-@import 'common/base';
+//@import 'common/base';
 //@import 'common/utilities';
 
 // Fonts
@@ -208,6 +208,10 @@ button {
     font-size: .8em;
     font-weight: bold;
     padding: 0 15px 20px;
+  }
+
+  a {
+    color: $light-brown;
   }
 
   p {

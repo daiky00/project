@@ -6,6 +6,6 @@ module.exports = function(grunt) {
 
   grunt.config('clean', {
     tmp: { src: ['<%= xh.tmp %>'] },
-    dist: { src: ['<%= xh.dist %>/*.html', '<%= xh.dist %>/css', '<%= xh.dist %>/js', '<%= xh.dist %>/fonts'] }
+    dist: { src: ['<%= xh.dist %>/*.php', '<%= xh.dist %>/css', '<%= xh.dist %>/js', '<%= xh.dist %>/fonts'] }
   });
 };

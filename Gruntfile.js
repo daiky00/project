@@ -22,7 +22,7 @@ module.exports = function (grunt) {
       src: 'src',
       dist: 'dist',
       tmp: '.tmp',
-      usemin: ['{head,scripts}.html'],
+      usemin: ['{head,scripts}.php'],
       root: __dirname,
       includes: '<%= xh.src %>/includes',
       images: '{img,media}',
@@ -39,6 +39,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('qa', 'Assure quality', [
+    'replace:reloader',
     'build',
     'validate',
     'jshint'

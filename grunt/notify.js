@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 
   grunt.config('notify', {
     options: {
-      title: 'Project'
+      title: 'project'
     },
     build: {
       options: {

@@ -17,7 +17,7 @@ module.exports = function(grunt) {
     },
 
     html: {
-      files: ['<%= xh.src %>/*.html'],
+      files: ['<%= xh.src %>/*.php'],
       tasks: ['build-html']
     },
 
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
     },
 
     includes: {
-      files: ['<%= xh.includes %>/*.html', '!<%= xh.includes %>/<%= xh.usemin %>'],
+      files: ['<%= xh.includes %>/*.php', '!<%= xh.includes %>/<%= xh.usemin %>'],
       tasks: ['newer:copy:includes', 'build-html']
     },
 

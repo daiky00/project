@@ -1,16 +1,16 @@
 {
   "generator-xh": {
     "config": {
-      "projectName": "Project",
-      "authorName": "XHTMLized",
-      "useBranding": true,
+      "projectName": "project",
+      "authorName": "Francisco Pena",
+      "useBranding": false,
       "reloader": "BrowserSync",
-      "devServer": true,
       "cssPreprocessor": "scss",
       "cssPrefix": "_",
       "ignoreDist": true,
       "isWP": false,
       "extension": "php",
+      "proxy": "localhost",
       "features": {
         "useJquery": true,
         "useOptim": true,
@@ -18,6 +18,10 @@
         "useBootstrap": true,
         "useModernizr": true
       }
-    }
+    },
+    "pages": [
+      "Home",
+      "project"
+    ]
   }
 }

@@ -1,4 +1,10 @@
-   <main role="main">
+@@include('head.php', {"pagename": "Home"})
+
+<body>
+
+@@include('header.php')
+
+  <main role="main">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-8">
@@ -18,8 +24,8 @@
                         </div>
                         <!-- / col-xs-12 -->
                         <div class="col-xs-12 col-md-4">
-                          <a rel="slideshow" href="img/news-image-1.png">
-                           <img width="80px" height="80px" alt="We say NO to artificial flavors" src="img/news-image-1.png">
+                          <a rel="slideshow" href="dist/img/news-image-1.png">
+                           <img width="80px" height="80px" alt="We say NO to artificial flavors" src="dist/img/news-image-1.png">
                           </a>
                         </div>
                         <!-- / col-xs-12 col-sm-4 -->
@@ -35,8 +41,8 @@
                         </div>
                         <!-- / col-xs-12 -->
                         <div class="col-xs-12 col-md-4">
-                          <a rel="slideshow" href="img/news-image-3.png">
-                            <img width="80px" height="80px" alt="New flavour added" src="img/news-image-3.png">
+                          <a rel="slideshow" href="dist/img/news-image-3.png">
+                            <img width="80px" height="80px" alt="New flavour added" src="dist/img/news-image-3.png">
                           </a>
                         </div>
                         <!-- / col-xs-12 col-sm-4 -->
@@ -68,8 +74,8 @@
                         </div>
                         <!-- / col-xs-12  -->
                         <div class="col-xs-12 col-md-4">
-                          <a rel="slideshow" href="img/news-image-2.png">
-                            <img width="80px" height="80px" alt="X-plosion is a hit in Japan" src="img/news-image-2.png">
+                          <a rel="slideshow" href="dist/img/news-image-2.png">
+                            <img width="80px" height="80px" alt="X-plosion is a hit in Japan" src="dist/img/news-image-2.png">
                           </a>
                         </div>
                         <!-- / col-xs-12 col-sm-4  -->
@@ -84,8 +90,8 @@
                           <h4>Danish elder hooked on X-Plosion</h4>
                         </div>
                         <div class="col-xs-12 col-md-4">
-                          <a rel="slideshow" href="img/news-image-4.png">
-                            <img width="80px" height="80px" alt="Danish elder hooked on X-Plosion" src="img/news-image-4.png">
+                          <a rel="slideshow" href="dist/img/news-image-4.png">
+                            <img width="80px" height="80px" alt="Danish elder hooked on X-Plosion" src="dist/img/news-image-4.png">
                           </a>
                         </div>
                         <!-- / col-xs-12 col-sm-4  -->
@@ -110,3 +116,10 @@
             <!-- / section news  -->
           </div>
           <!-- / col-xs-12 col-md-8 -->
+
+@@include('sidebar.php')
+@@include('footer.php')
+@@include('scripts.php')
+
+</body>
+</html>

@@ -7,7 +7,7 @@ module.exports = function(grunt) {
   grunt.config('sass', {
     dist: {
       options: {
-        outputStyle: 'compressed',
+        outputStyle: 'expanded',
         imagePath: '../img',
         includePaths: [
           '<%= xh.src %>/bower_components',

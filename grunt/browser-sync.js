@@ -11,16 +11,13 @@ module.exports = function(grunt) {
           '<%= xh.dist %>/css/*.css',
           '<%= xh.dist %>/js/*.js',
           '<%= xh.dist %>/<%= xh.assets %>/**/*.*',
-          '<%= xh.dist %>/**/*.html'
+          '<%= xh.dist %>/**/*.php'
         ]
       },
 
       options: {
         watchTask: true,
-        server: {
-          baseDir: './',
-          port: 3000
-        },
+        proxy: 'localhost',
         notify: false
       }
     }

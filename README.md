@@ -1,7 +1,7 @@
-Project
+project
 ==================
 
-Project is a Front-end project created with [XH Generator](https://github.com/xhtmlized/generator-xh), a [Yeoman](http://yeoman.io) generator for scaffolding web projects.
+project is a Front-end project created with [XH Generator](https://github.com/xhtmlized/generator-xh), a [Yeoman](http://yeoman.io) generator for scaffolding web projects.
 
 ## Table of contents
 
@@ -87,7 +87,7 @@ On a typical project, you will work in `src` folder and check your work in `dist
 
 If you are joining an existing project which was set up using XH Generator (assuming that you have all [prerequisites](#prerequisites) installed), all you need to do is to clone the existing repository and install Bower and npm dependencies.
 
-Let's imagine you have cloned/unpacked Project project into `project` directory.
+Let's imagine you have cloned/unpacked project project into `project` directory.
 
 First, change the directory to your cloned project:
 
