@@ -120,6 +120,5 @@
 @@include('sidebar.php')
 @@include('footer.php')
 @@include('scripts.php')
-
 </body>
 </html>
